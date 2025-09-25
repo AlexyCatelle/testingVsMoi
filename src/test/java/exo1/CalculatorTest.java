@@ -35,6 +35,22 @@ class CalculatorTest {
         assertEquals(1, result);
     }
 
+@Test
+    @DisplayName("multiplication")
+    void testMultiplication_TwoxTree_ShouldReturnSix() {
+        Calculator calculator = new Calculator();
 
+        double result = calculator.mul(2,3);
+
+                assertEquals(6, result);
+}
+
+@Test
+    @DisplayName("division")
+    void testDivision_SixByTwo_ShouldReturnTree() {
+        Calculator calculator = new Calculator();
+        double result = calculator.div(6,2);
+        assertEquals(3, result);
+}
 
 }
