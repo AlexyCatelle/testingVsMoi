@@ -16,7 +16,6 @@ class CalculatorTest {
         assertNotEquals(3,result);
     }
 
-
     @Test
     @DisplayName("addition")
     void testAdd_OnePlusTwo_ShouldReturntree() {
@@ -25,4 +24,17 @@ class CalculatorTest {
         double result = calculator.add(1, 2);
         assertEquals(3, result);
     }
+
+    @Test
+    @DisplayName("soustraction")
+    void testSoustraction_TwoMinusOne_ShouldReturnOne() {
+        Calculator calculator = new Calculator();
+
+        double result = calculator.sub(2, 1);
+
+        assertEquals(1, result);
+    }
+
+
+
 }
